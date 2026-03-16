@@ -1,0 +1,66 @@
+/* Wrapper: scrollable category row */
+.category-bar-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Inner bar: aligned horizontally */
+.category-bar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Each category link */
+.category-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: #6d6d6d; /* H&M/Zara grey */
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect: subtle underline + darker text */
+.category-link:hover {
+  color: #111;
+}
+
+.category-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* faint underline */
+}
+
+/* ACTIVE category — Zara style underline */
+.category-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.category-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  background-color: #000; /* bold underline */
+}
+
+/* Smooth scroll for mobile feel */
+.category-bar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.category-bar-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,79 @@
+/* Remove underline globally */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Card hover lift */
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE WRAPPER */
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image styling */
+.product-img {
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Zoom on hover */
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding-bottom: 25px;
+}
+
+/* Show overlay */
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+/* Quick View Button */
+.quick-view-btn {
+  background: #f1efec;
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.quick-view-btn:hover {
+  background: #c9962c;
+  color: white;
+}
+
+/* Typography */
+.product-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 1rem;
+}

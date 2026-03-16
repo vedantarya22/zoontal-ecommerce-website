@@ -1,0 +1,26 @@
+.edit-fab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 1rem;
+  background: #DAA315;
+  color: #fff;
+  border-radius: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.edit-fab:hover {
+  background: #c4920f;
+  color: #fff;
+}
+
+.edit-fab:active {
+  transform: scale(0.97);
+}

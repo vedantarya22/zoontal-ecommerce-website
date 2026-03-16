@@ -1,0 +1,130 @@
+.container .collection-start {
+  margin: 1rem auto;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.collection-start p {
+  font-family: Josefin Sans;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+}
+
+.collection-start h2 {
+  font-family: Cormorant Garamond;
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.collection-start span {
+  color: #DAA315;
+}
+
+.collection-start hr {
+  width: 50%;
+  border-top: 3px solid #DAA315;
+}
+
+.collection-start .collection-tagline {
+  font-family: Josefin Sans;
+}
+
+.segment-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e6e2;
+  width: 350px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.segment-control button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  font-weight: 400;
+  font-family: Josefin Sans;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.segment-control button.active {
+  background: #DAA315;
+  color: white;
+}
+
+/* ── Tablet (max 992px) ────────────────────────────────────── */
+@media (max-width: 992px) {
+  .collection-start h2 {
+    font-size: 48px;
+  }
+
+  /* 2 columns instead of 3 */
+  .row .col-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .row.p-5 {
+    padding: 2rem !important;
+  }
+}
+
+/* ── Mobile (max 768px) ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container .collection-start {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .collection-start h2 {
+    font-size: 38px;
+  }
+
+  .collection-start p {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .segment-control {
+    width: 280px;
+  }
+
+  .segment-control button {
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+  }
+
+  /* 1 column on mobile */
+  .row .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .row.p-5 {
+    padding: 1rem !important;
+  }
+}
+
+/* ── Small Mobile (max 480px) ──────────────────────────────── */
+@media (max-width: 480px) {
+  .collection-start h2 {
+    font-size: 30px;
+  }
+
+  .segment-control {
+    width: 240px;
+  }
+
+  .collection-start hr {
+    width: 70%;
+  }
+}

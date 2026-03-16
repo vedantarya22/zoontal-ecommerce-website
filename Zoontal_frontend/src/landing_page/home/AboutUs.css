@@ -1,0 +1,145 @@
+.about-section {
+  background-color: #f8f6f2;
+}
+
+/* Left image */
+.about-image {
+  height: 100vh;
+  background-image: url("/zoontal_artists.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* RIGHT CONTENT */
+.about-content {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Subtitle */
+.about-subtitle {
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+  font-family: Josefin Sans;
+}
+
+.about-title {
+  font-family: Cormorant Garamond;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+hr {
+  width: 20%;
+  border-top: 2px solid #CB5E4D;
+}
+
+.about-title span {
+  color: #CB5E4D;
+}
+
+.about-text {
+  color: #8c8c8c;
+  font-family: Josefin Sans;
+}
+
+.stats h4 {
+  color: #DAA315;
+  font-weight: 600;
+}
+
+.stats p {
+  font-family: Josefin Sans;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #8c8c8c;
+}
+
+/* ── Tablet (max 992px) ────────────────────────────────────── */
+@media (max-width: 992px) {
+  .about-image {
+    height: 60vh;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-content {
+    padding: 2rem !important;
+  }
+}
+
+/* ── Mobile (max 768px) ────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Stack image on top, content below */
+  .about-section .row {
+    flex-direction: column;
+  }
+
+  .about-section .col-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-image {
+    height: 50vw;        /* proportional height when full width */
+    min-height: 260px;
+  }
+
+  .about-content {
+    padding: 2rem 1.5rem !important;
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+  }
+
+  hr {
+    width: 30%;
+  }
+
+  .stats h4 {
+    font-size: 1.2rem;
+  }
+
+  .stats p {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* ── Small Mobile (max 480px) ──────────────────────────────── */
+@media (max-width: 480px) {
+  .about-image {
+    height: 240px;
+  }
+
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .about-content {
+    padding: 1.5rem 1rem !important;
+  }
+
+  /* Stack stats vertically */
+  .stats .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  hr {
+    width: 40%;
+  }
+}

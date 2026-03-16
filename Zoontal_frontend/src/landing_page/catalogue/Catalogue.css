@@ -1,0 +1,35 @@
+.catalogue-admin-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.catalogue-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.6rem 1.5rem;
+  background: #DAA315;
+  color: #fff;
+  border-radius: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.catalogue-add-btn:hover { background: #c4920f; color: #fff; }
+
+.catalogue-count {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: rgba(0,0,0,0.45);
+  text-transform: uppercase;
+}

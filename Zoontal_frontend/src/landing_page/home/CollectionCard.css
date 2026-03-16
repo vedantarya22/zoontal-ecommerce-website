@@ -1,0 +1,70 @@
+.card-body .card-title {
+    font-family: Cormorant Garamond;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.card-body .card-text {
+    font-family: Josefin Sans;
+    font-weight: 350;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.collection-card {
+  width: 100%;  /* ← takes width from Bootstrap column */
+}
+
+.collection-link {
+  display: block;  /* ← ensures Link fills the column properly */
+  width: 100%;
+}
+
+.collection-card:hover img {
+    transform: scale(1.08);
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* SHOW OVERLAY ON HOVER */
+.collection-card:hover .overlay {
+  opacity: 1;
+}
+
+/* BUTTON */
+.view-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: white;
+  color: black;
+}

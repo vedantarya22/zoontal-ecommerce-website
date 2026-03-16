@@ -1,0 +1,19 @@
+/* Global reset — must be imported in index.js FIRST */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Non-home pages: push content below fixed navbar */
+.page-content {
+ padding-top: 100px; 
+}

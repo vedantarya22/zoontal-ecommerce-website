@@ -1,0 +1,16 @@
+
+
+.related-subtitle {
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+}
+
+.related-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+}
+
+.related-title span {
+  color: #c9962c;
+}
